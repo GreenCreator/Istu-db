@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import ru.akoval.monitoring.util.PersistedTableColumn?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1168.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.akoval.monitoring.controllers.SemesterTableController">
+      <TableView fx:id="semesterTable" editable="true" prefHeight="140.0" prefWidth="1150.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <PersistedTableColumn fx:id="groupColumn" prefWidth="114.0" text="Группа" />
+            <PersistedTableColumn fx:id="studentColumn" prefWidth="232.0" text="Студент" />
+            <PersistedTableColumn fx:id="dobColumn" prefWidth="158.0" text="Дата рождения" />
+            <PersistedTableColumn fx:id="instructorColumn" prefWidth="299.0" text="Преподаватель" />
+            <PersistedTableColumn fx:id="semesterColumn" prefWidth="105.0" text="Семестр" />
+            <PersistedTableColumn fx:id="diseaseColumn" prefWidth="248.0" text="Заболевания" visible="false" />
+            <PersistedTableColumn fx:id="dateOfSurveyColumn" prefWidth="150.0" text="Дата обследования" visible="false" />
+            <PersistedTableColumn fx:id="heightColumn" prefWidth="100.0" text="Рост" visible="false" />
+            <PersistedTableColumn fx:id="weightColumn" prefWidth="100.0" text="Масса" visible="false" />
+            <PersistedTableColumn fx:id="okrGrCellsColumn" prefWidth="220.0" text="Окружность грудной клетки" visible="false" />
+            <PersistedTableColumn fx:id="waistCircumferenceColumn" prefWidth="137.0" text="Обхват талии" visible="false" />
+            <PersistedTableColumn fx:id="lifelungCapacityColumn" prefWidth="215.0" text="Жизненная емкость легких" visible="false" />
+            <PersistedTableColumn fx:id="SADColumn" prefWidth="66.0" text="САД" visible="false" />
+            <PersistedTableColumn fx:id="DADColumn" prefWidth="53.0" text="ДАД" visible="false" />
+            <PersistedTableColumn fx:id="SHSSatRestColumn" prefWidth="117.0" text="ЧСС в покое" visible="false" />
+            <PersistedTableColumn fx:id="SHSSbeforeExerciseColumn" prefWidth="150.0" text="ЧСС до нагрузки" visible="false" />
+            <PersistedTableColumn fx:id="SHSSafterExerciseColumn" prefWidth="178.0" text="ЧСС после нагрузки" visible="false" />
+            <PersistedTableColumn fx:id="recoveryTimeColumn" prefWidth="189.0" text="Время восстановления" visible="false" />
+            <PersistedTableColumn fx:id="DINleftColumn" prefWidth="200.0" text="Динамометрия левая" visible="false" />
+            <PersistedTableColumn fx:id="DINrightColumn" prefWidth="200.0" text="Динамометрия правая" visible="false" />
+            <PersistedTableColumn fx:id="stangeTestColumn" prefWidth="156.0" text="Проба Штанге" visible="false" />
+            <PersistedTableColumn fx:id="gencheTestColumn" prefWidth="120.0" text="Проба Генче" visible="false" />
+            <PersistedTableColumn fx:id="orthoprobeSHSSlyingColumn" prefWidth="220.0" text="Ортопроба ЧСС лежа" visible="false" />
+            <PersistedTableColumn fx:id="orthoprobeSHSSstandingColumn" prefWidth="186.0" text="Ортопроба ЧСС стоя" visible="false" />
+            <PersistedTableColumn fx:id="orthoprobeDiffColumn" prefWidth="267.0" text="Ортопроба (ЧСС стоя - ЧСС лежа)" visible="false" />
+            <PersistedTableColumn fx:id="klinoprobaSHSSstandingColumn" prefWidth="206.0" text="Клинопроба ЧСС стоя" visible="false" />
+            <PersistedTableColumn fx:id="klinoprobaSHSSlyingColumn" prefWidth="220.0" text="Клинопроба ЧСС лежа" visible="false" />
+            <PersistedTableColumn fx:id="klinoprobaDiffColumn" prefWidth="276.0" text="Клинопроба (ЧСС стоя - ЧСС лежа)" visible="false" />
+            <PersistedTableColumn fx:id="shuttleRunColumn" prefWidth="157.0" text="Челночный бег" visible="false" />
+            <PersistedTableColumn fx:id="running30mColumn" prefWidth="183.0" text="Бег 30 метров" visible="false" />
+            <PersistedTableColumn fx:id="running100mColumn" prefWidth="200.0" text="Бег 100 метров" visible="false" />
+            <PersistedTableColumn fx:id="running1000mColumn" prefWidth="163.0" text="Бег 1000 метров" visible="false" />
+            <PersistedTableColumn fx:id="running2000mFColumn" prefWidth="168.0" text="Бег 2000 метров" visible="false" />
+            <PersistedTableColumn fx:id="running3000mMColumn" prefWidth="200.0" text="Бег 3000 метров" visible="false" />
+            <PersistedTableColumn fx:id="visOnBentHandsFColumn" prefWidth="218.0" text="Вис на согнутых руках" visible="false" />
+            <PersistedTableColumn fx:id="pullUpMColumn" prefWidth="130.0" text="Подтягивание" visible="false" />
+            <PersistedTableColumn fx:id="liftingTheTrunk30sColumn" prefWidth="256.0" text="Подъем туловища за 30 секунд" visible="false" />
+            <PersistedTableColumn fx:id="liftingTheTrunk1mColumn" prefWidth="238.0" text="Подъем туловища за 1 минуту" visible="false" />
+            <PersistedTableColumn fx:id="tiltForwardFromStandingColumn" prefWidth="240.0" text="Наклон вперед из ИП стоя" visible="false" />
+            <PersistedTableColumn fx:id="tiltForwardFromLyingColumn" prefWidth="294.0" text="Наклон назад из ИП лежа на животе" visible="false" />
+            <PersistedTableColumn fx:id="leapFromThePlaceColumn" prefWidth="200.0" text="Прыжок в длину с места" visible="false" />
+            <PersistedTableColumn fx:id="push_upColumn" prefWidth="130.0" text="Отжимания" visible="false" />
+            <PersistedTableColumn fx:id="KEKColumn" prefWidth="110.0" text="КЭК" visible="false" />
+            <PersistedTableColumn fx:id="KVColumn" prefWidth="110.0" text="КВ" visible="false" />
+            <PersistedTableColumn fx:id="IMTColumn" prefWidth="110.0" text="ИМТ" />
+            <PersistedTableColumn fx:id="PEIPRGKColumn" prefWidth="120.0" text="ПЭ | ИПРГК" />
+            <PersistedTableColumn fx:id="PPIOFRColumn" prefWidth="120.0" text="ПП | ИОФР" />
+            <PersistedTableColumn fx:id="ADColumn" prefWidth="110.0" text="АД" />
+            <PersistedTableColumn fx:id="UFSColumn" prefWidth="110.0" text="УФС" />
+            <PersistedTableColumn fx:id="VIColumn" prefWidth="110.0" text="ВИ" />
+            <PersistedTableColumn fx:id="ZIColumn" prefWidth="110.0" text="ЖИ" />
+            <PersistedTableColumn fx:id="DVMTColumn" prefWidth="120.0" text="ДВМТ" />
+         </columns>
+      </TableView>
+    <Pagination fx:id="semesterTablePagination" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+</AnchorPane>

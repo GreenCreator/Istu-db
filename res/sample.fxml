@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.akoval.monitoring.controllers.ApplicationMainController">
+    <children>
+        <AnchorPane layoutY="104.0" prefHeight="603.0" prefWidth="900.0" style="-fx-background-color: #FFFAFA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+            <children>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                        <Tab text="Специальность">
+                            <content>
+                                <fx:include fx:id="specialityTab" source="specialityTable.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab text="Студент">
+                            <content>
+                                <fx:include fx:id="studentTab" source="studentTable.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab text="Преподаватель">
+                            <content>
+                                <fx:include fx:id="instructorTab" source="instructorTable.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab text="Факультет">
+                            <content>
+                                <fx:include fx:id="departmentTab" source="departmentTable.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab text="Группа">
+                            <content>
+                                <fx:include fx:id="classTab" source="classTable.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab text="Заболевания">
+                            <content>
+                                <fx:include fx:id="diseaseTable" source="diseaseTable.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab text="Семестр">
+                            <content>
+                                <fx:include fx:id="semesterTable" source="semesterTable.fxml" />
+                            </content>
+                        </Tab>
+               </tabs>
+            </TabPane>
+            </children>
+        </AnchorPane>
+
+        <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Файл">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Сохранить" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Отчеты">
+                    <items>
+                        <MenuItem fx:id="handleShowBirthdayStatistics" mnemonicParsing="false" text="Показать статистику" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Сервис">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

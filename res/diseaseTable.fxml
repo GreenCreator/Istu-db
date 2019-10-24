@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.akoval.monitoring.controllers.DiseaseTableController">
+   <children>
+      <TableView fx:id="diseaseTable" prefHeight="579.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="codeDiseaseColumn" minWidth="12.0" prefWidth="93.0" text="Шифр" />
+            <TableColumn fx:id="titleDiseaseColumn" prefWidth="250.0" text="Наименование" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

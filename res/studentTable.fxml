@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.akoval.monitoring.controllers.StudentTableController">
+   <children>
+       <Pagination fx:id="studentTablePagination" layoutX="299.0" layoutY="432.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+       <TableView fx:id="studentTable" prefHeight="579.0" prefWidth="900.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+           <columns>
+               <TableColumn fx:id="surnameColumn" prefWidth="200.0" text="Фамилия" />
+            <TableColumn fx:id="nameColumn" prefWidth="150.0" text="Имя" />
+            <TableColumn fx:id="middlenameColumn" prefWidth="200.0" text="Отчество" />
+               <TableColumn fx:id="dobColumn" prefWidth="139.0" text="Дата рождения" />
+               <TableColumn fx:id="genderColumn" prefWidth="114.0" text="Пол" />
+               <TableColumn fx:id="groupColumn" minWidth="0.0" prefWidth="150.0" text="Группа" />
+           </columns>
+       </TableView>
+   </children>
+</AnchorPane>

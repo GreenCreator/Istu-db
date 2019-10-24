@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane fx:id="filterPanel" prefHeight="310.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.akoval.monitoring.controllers.SemesterTableFilterController">
+    <HBox layoutX="197.1875" layoutY="241.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <children>
+            <Button layoutX="197.1875" layoutY="241.0" mnemonicParsing="false" onAction="#handleOk" prefWidth="90.0"
+                    text="OK"/>
+            <Button layoutX="249.375" layoutY="241.0" mnemonicParsing="false" onAction="#handleCancel" prefWidth="90.0"
+                    text="Отмена"/>
+        </children>
+    </HBox>
+    <HBox layoutX="10.0" layoutY="10.0" spacing="5.0">
+        <children>
+            <ComboBox fx:id="filterComboBox" layoutX="10.0" layoutY="21.0" prefWidth="150.0"/>
+            <Button layoutX="180.0" layoutY="21.0" mnemonicParsing="false" onAction="#addOk" prefWidth="90.0"
+                    text="Добавить"/>
+        </children>
+    </HBox>
+
+</AnchorPane>
